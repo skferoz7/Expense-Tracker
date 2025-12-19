@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row align-items-center" style="min-height: 70vh;">
+    <div class="col-md-6">
+        <h1 class="fw-bold text-primary">Expense Tracker</h1>
+        <p class="lead mt-3">
+            Manage your daily expenses easily, track your spending,
+            and stay in control of your finances.
+        </p>
+
+        <div class="mt-4">
+            <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg me-2">
+                Login
+            </a>
+            <a href="{{ url_for('register') }}" class="btn btn-outline-primary btn-lg">
+                Register
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-6 text-center">
+        <div class="card shadow-lg p-4">
+            <h5 class="fw-bold mb-3">Why use Expense Tracker?</h5>
+            <ul class="list-group list-group-flush text-start">
+                <li class="list-group-item">✔ Track daily expenses</li>
+                <li class="list-group-item">✔ Category-wise analysis</li>
+                <li class="list-group-item">✔ Monthly spending reports</li>
+                <li class="list-group-item">✔ Secure login system</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

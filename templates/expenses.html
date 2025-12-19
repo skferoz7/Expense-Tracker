@@ -1,0 +1,34 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<h3 class="mb-3">All Expenses</h3>
+
+<div class="card shadow">
+    <div class="card-body">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Title</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in expenses %}
+                <tr>
+                    <td>{{ e.title }}</td>
+                    <td>₹{{ e.amount }}</td>
+                    <td>{{ e.category }}</td>
+                    <td>{{ e.expense_date }}</td>
+                    <td>{{ e.notes or '-' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

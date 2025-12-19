@@ -1,0 +1,49 @@
+
+body{font-family:Arial;background:#f4f6f8;margin:0}
+.navbar{background:#0d6efd;color:white;padding:15px;display:flex;justify-content:space-between}
+.navbar a{color:white;margin-left:15px;text-decoration:none}
+.container{padding:20px}
+.btn{background:#0d6efd;color:white;padding:8px 14px;border:none;border-radius:4px}
+.card{background:white;padding:20px;margin:10px 0;border-radius:5px}
+table{width:100%;background:white;border-collapse:collapse}
+th,td{padding:10px;border:1px solid #ddd}
+
+
+.navbar {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;    
+    gap: 15px;                  
+}
+
+.navbar .options {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .options a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .options a:hover {
+    background-color: #0056b3;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #007bff;
+}
